@@ -1,4 +1,4 @@
-GPT_KEY = f"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"
+GPT_KEY = input("В целях безопасности тут нет ключа:")
 
 from flask import Flask
 from flask import render_template
