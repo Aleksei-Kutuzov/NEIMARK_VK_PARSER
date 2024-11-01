@@ -51,7 +51,7 @@ class VK_Parser:
 
 
 
-VK_TOKEN = "5e97aac55e97aac55e97aac5855db5b97555e975e97aac53988ce9d07348f71675bf12a"
+VK_TOKEN = input("В целях безопасности тут нет ключа:")
 search_query = "neimark_it"
 count = 100
 
