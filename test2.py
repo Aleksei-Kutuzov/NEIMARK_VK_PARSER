@@ -6,7 +6,7 @@ import vk_api
 
 import promt
 
-VK_TOKEN = "5e97aac55e97aac55e97aac5855db5b97555e975e97aac53988ce9d07348f71675bf12a"
+VK_TOKEN = input("В целях безопасности тут нет ключа:")
 vk_session = vk_api.VkApi(token=VK_TOKEN, scope='groups, wall')
 vk = vk_session.get_api()
 # groups = vk.groups.search(q='НЕЙМАРК', count=10)
@@ -21,7 +21,7 @@ for item in search_results['items']:
 from yandex_gpt import YandexGPT, YandexGPTConfigManagerForAPIKey
 import yandex_gpt
 # Setup configuration (input fields may be empty if they are set in environment variables)
-config = YandexGPTConfigManagerForAPIKey(model_type="yandexgpt", catalog_id="b1gukhevebno8l2921eu", api_key="AQVN0kIl5D3-ks-_GzGiJ87GdDzBCQOP7Z5lTRUp")
+config = YandexGPTConfigManagerForAPIKey(model_type="yandexgpt", catalog_id=input("В целях безопасности тут нет ключа каталога:"), api_key=input("В целях безопасности тут нет ключа:"))
 
 # Instantiate YandexGPT
 yandex_gpt = YandexGPT(config_manager=config)
