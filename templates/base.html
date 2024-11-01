@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+  <link rel="shortcut icon" href="static/images/icon.png" type="image/png">
+  <noscript>Многое на сайте может не работать, ваш браузер не поддерживает JavaScript</noscript>
+</head>
+
+<body>
+    <div class="container" >
+        <div style="position: fixed;" class="container">
+        <header class="d-flex justify-content-center py-3">
+        </header>
+        </div>
+        <div class="container" style="padding-top: 100px">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</body>
