@@ -5,7 +5,7 @@ import KEYS
 import promt
 
 # токен
-vk_session = vk_api.VkApi(token="5e97aac55e97aac55e97aac5855db5b97555e975e97aac53988ce9d07348f71675bf12a")
+vk_session = vk_api.VkApi(token=input("В целях безопасности тут нет ключа:")")
 vk = vk_session.get_api()
 
 
@@ -37,7 +37,7 @@ def search_posts(query, count=10):
 search_posts(search_query, count)
 # import yandexgptlite
 # from yandexgptlite import YandexGPTLite
-# GPT_KEYS = {"folder": "b1gukhevebno8l2921eu", "token": "y0_AgAAAABjBHlkAATuwQAAAAEWUdJQAADGmortblZNc5GNLZ3vYbDfaQwwAA"}
+# GPT_KEYS = {"folder": "b1gukhevebno8l2921eu", "token": "токен"}
 #
 # account = YandexGPTLite(GPT_KEYS["folder"], GPT_KEYS["token"])
 # text = account.create_completion(f"Привет, тебе будут поступать списки текста поств VK по тематике IT конкурсов тебе нужно преобразоать это в json в котором нужно указать временной интервал прохождения и кратко о конкурсе: {[wwq]}", 0.3)
@@ -54,7 +54,7 @@ search_posts(search_query, count)
 from yandex_gpt import YandexGPT, YandexGPTConfigManagerForAPIKey
 
 # Setup configuration (input fields may be empty if they are set in environment variables)
-config = YandexGPTConfigManagerForAPIKey(model_type="yandexgpt", catalog_id="b1gukhevebno8l2921eu", api_key="AQVN0kIl5D3-ks-_GzGiJ87GdDzBCQOP7Z5lTRUp")
+config = YandexGPTConfigManagerForAPIKey(model_type="yandexgpt", catalog_id="input("В целях безопасности тут нет ключа каталога:")", api_key="input("В целях безопасности тут нет ключа:")")
 
 # Instantiate YandexGPT
 yandex_gpt = YandexGPT(config_manager=config)
