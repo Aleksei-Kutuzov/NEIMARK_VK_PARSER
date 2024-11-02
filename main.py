@@ -3,11 +3,13 @@ import json
 from datetime import datetime
 import asyncio
 import requests
+
 import vk_api
+
 from yandex_gpt import YandexGPT, YandexGPTConfigManagerForAPIKey
 import yandex_gpt
 
-import t_promt
+import promt
 
 
 class VK_Parser:
@@ -74,12 +76,12 @@ async def post_completion(post, url, GPT: YA_GPT):
         print("e " + e.__str__())
 
 
-
-VK_TOKEN = "5e97aac55e97aac55e97aac5855db5b97555e975e97aac53988ce9d07348f71675bf12a"
+# ¯\_(ツ)_/¯ - то что было скрыто в целях безопасности
+VK_TOKEN = "¯\_(ツ)_/¯"
 GROUP_ID, QUERY, COUNT = "yandex_education", "IT", 100
-MODEL_TYPE, CATALOG_ID, API_KEY = "yandexgpt", "b1gukhevebno8l2921eu", "AQVN0kIl5D3-ks-_GzGiJ87GdDzBCQOP7Z5lTRUp"
-SITE_TO_POST_URL = "http://gimnazevent.ru/NN/SendToBD.php/"
-PROMT = t_promt.promt
+MODEL_TYPE, CATALOG_ID, API_KEY = "yandexgpt", "¯\_(ツ)_/¯", "¯\_(ツ)_/¯"
+SITE_TO_POST_URL = "¯\_(ツ)_/¯"
+PROMT = promt.promt
 
 VK_Pars = VK_Parser(VK_TOKEN)
 search_results = VK_Pars.getPostsByOwnerId(owner_id=GROUP_ID, query=QUERY, count=COUNT)
